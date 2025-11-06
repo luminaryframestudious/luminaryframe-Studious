@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuminaryFrame Studios - Admin Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="section" style="max-width: 420px; margin-top: 80px;">
+    <div class="form-card">
+      <h2 style="text-align:center; margin-bottom: 20px;">Admin Login</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your admin email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <button id="loginBtn" class="btn btn-primary" style="width: 100%; margin-top: 16px;">
+        Login
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
