@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LuminaryFrame Studios — Book Edit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>LuminaryFrame Studios</h1>
+    <nav>
+      <button id="auth-btn">Sign in with Google</button>
+      <a id="admin-link" href="admin.html" style="display:none">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Cinematic, VFX & AI Editing — Professional Results</h2>
+      <p>Choose app, style, upload clip and pay via UPI. We deliver through your dashboard.</p>
+    </section>
+
+    <section class="booking-card">
+      <h3>Place Your Booking</h3>
+
+      <form id="booking-form">
+        <label>
+          Full name
+          <input type="text" id="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" id="phone" />
+        </label>
+
+        <label>
+          Choose App
+          <select id="app">
+            <option>CapCut</option>
+            <option>Alight Motion</option>
+            <option>VN</option>
+            <option>After Effects</option>
+          </select>
+        </label>
+
+        <label>
+          Editing Style
+          <select id="style">
+            <option>Cinematic</option>
+            <option>VFX</option>
+            <option>AI Edit</option>
+            <option>Transition</option>
+            <option>3D Edit</option>
+          </select>
+        </label>
+
+        <label>
+          Upload Clip (max 200MB)
+          <input type="file" id="clip" accept="video/*" required />
+        </label>
+
+        <label>
+          Price (₹)
+          <input type="number" id="price" value="50" min="1" required />
+        </label>
+
+        <div class="upi-note">
+          <p>Pay via UPI: <strong>9239529167@fam</strong></p>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="pay-btn">Pay & Submit Booking</button>
+        </div>
+      </form>
+
+      <div id="status" class="status"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Contact: +91 9239529167 · Instagram: @luminary_frame_studios</p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html><section class="fade-in">
+  <!-- your content -->
+</section>

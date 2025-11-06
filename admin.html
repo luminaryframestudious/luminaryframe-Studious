@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — LuminaryFrame Studios</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* small admin tweaks */
+    .admin-header{display:flex;justify-content:space-between;align-items:center;padding:16px}
+    .bookings-list{margin:18px 0}
+    .booking{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);margin-bottom:10px}
+    .booking pre{white-space:pre-wrap}
+    .btn{padding:8px 10px;border-radius:8px;border:0;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,#f59e0b,#ffb86b);color:#08101a}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="site-header admin-header">
+    <h2>Admin Panel — LuminaryFrame Studios</h2>
+    <div>
+      <button id="admin-signin" class="btn btn-ghost">Sign in with Google</button>
+      <button id="signout" class="btn btn-ghost" style="display:none">Sign out</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h3>Bookings</h3>
+      <div id="bookings" class="bookings-list">Loading bookings…</div>
+    </section>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html><h2>Upload Sample Work</h2>
+<form id="uploadForm">
+  <label>Title</label>
+  <input type="text" id="sampleTitle" placeholder="Enter sample name" required>
+
+  <label>File (Image or Video)</label>
+  <input type="file" id="sampleFile" accept="image/*,video/*" required>
+
+  <button type="submit">Upload Sample</button>
+</form>
+
+<hr>
+
+<h2>Change Website Logo</h2>
+<form id="logoForm">
+  <input type="file" id="logoFile" accept="image/*" required>
+  <button type="submit">Upload New Logo</button>
+</form>
+
+<p id="adminMsg"></p><section id="recentEdits">
+  <h2>Recent Edits</h2>
+  <div id="samplesContainer" class="samples-grid"></div>
+</section>
