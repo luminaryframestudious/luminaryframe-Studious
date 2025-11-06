@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="LuminaryFrame Studios — Cinematic video editing, VFX, AI edits and transitions." />
+  <title>LuminaryFrame Studios — Cinematic Video Editing</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b0b0b" />
+</head>
+<body>
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <img src="logo.png" alt="LuminaryFrame Studios Logo" class="site-logo">
+  </header>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="logo.png" alt="logo" class="logo" style="width:44px;height:44px;border-radius:10px" />
+      <div class="brand-text">
+        <div class="title">LuminaryFrame Studios</div>
+        <div class="subtitle">Cinematic Video Editing • Real, Professional Work</div>
+      </div>
+    </div>
+
+    <nav class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#edits">Explore Edits</a>
+      <a href="#booking">Book Now</a>
+      <a href="#contact">Contact</a>
+      <a href="auth.html" class="small">Login</a>
+      <a href="admin.html" class="small">Admin</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>LuminaryFrame Studios</h1>
+        <p class="lead">Transform Your Clips Into Cinematic Masterpieces. We provide cinematic edits, VFX, AI edits, transitions and affordable prices for creators and businesses.</p>
+
+        <div class="hero-cta">
+          <a href="#booking" class="btn btn-primary">Start Booking</a>
+          <a href="#edits" class="btn btn-outline">See Gallery</a>
+        </div>
+
+        <div class="recent-grid" aria-hidden="true">
+          <div class="shot">Cinematic Trailer Cut — 0:40</div>
+          <div class="shot">VFX Short — 0:22</div>
+          <div class="shot">Smooth Transition — 0:15</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITS / CATEGORIES -->
+    <section id="edits" class="section">
+      <h2>Choose App & Edit Type</h2>
+      <div class="cards">
+        <div class="card-col">
+          <h3>Editing Apps</h3>
+          <div class="pill">CapCut</div>
+          <div class="pill">Alight Motion</div>
+          <div class="pill">VN</div>
+          <div class="pill">After Effects</div>
+        </div>
+
+        <div class="card-col">
+          <h3>Edit Styles</h3>
+          <div class="pill">Cinematic</div>
+          <div class="pill">VFX</div>
+          <div class="pill">AI Edit</div>
+          <div class="pill">Transition</div>
+          <div class="pill">3D Edit</div>
+        </div>
+
+        <div class="card-col">
+          <h3>Pricing & Speed</h3>
+          <p class="muted">Affordable: Most edits are under ₹100. Choose a preset or ask for a custom quote in booking notes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section id="booking" class="section booking">
+      <h2>Booking</h2>
+      <form id="bookingForm" class="form-card" autocomplete="off">
+        <label for="name">Full name</label>
+        <input id="name" type="text" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="+91 9xxxxxxxxx" required />
+
+        <div class="row">
+          <div class="col">
+            <label for="category">Edit app</label>
+            <select id="category" required>
+              <option value="CapCut">CapCut</option>
+              <option value="Alight Motion">Alight Motion</option>
+              <option value="Canva">Canva</option>
+              <option value="VN">VN</option>
+              <option value="After Effects">After Effects</option>
+            </select>
+          </div>
+
+          <div class="col">
+            <label for="style">Edit type</label>
+            <select id="style" required>
+              <option value="Cinematic">Cinematic</option>
+              <option value="VFX">VFX</option>
+              <option value="Tutorial edits">Tutorial edits</option>
+              <option value="Speed Ramp">Speed Ramp</option>
+              <option value="Transition">Transition</option>
+              <option value="Logo design">Logo design</option>
+              <option value="Intro Edit">Intro Edit</option>
+              <option value="3D Edit">3D Edit</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="message">Notes (what do you want?)</label>
+        <textarea id="message" placeholder="Describe the edit you'd like..." rows="3"></textarea>
+
+        <label for="clipUpload">Upload clips or images (mp4, mov, jpg, png) — multiple allowed</label>
+        <input type="file" id="clipUpload" accept="image/*,video/*" multiple>
+
+        <div id="fileCount" class="muted small" style="margin-top:8px"></div>
+
+        <p class="payment-note">Pay ₹5 first to UPI ID: <strong>9239529167@fam</strong></p>
+        <button id="payBtn" class="btn btn-primary" type="button">Pay Now</button>
+
+        <div class="muted small" style="margin-top:10px">Payment: Pay via UPI after we confirm. UPI ID: <strong>9239529167@fam</strong></div>
+
+        <button id="submitBooking" class="btn btn-primary" type="submit">Submit Booking</button>
+
+        <div id="bookingStatus" class="muted small" role="status" style="margin-top:10px"></div>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:luminaryframestudios@gmail.com">luminaryframestudios@gmail.com</a></p>
+      <p>Phone/UPI: <strong>+91 9239529167 — 9239529167@fam</strong></p>
+      <p>Instagram: @luminary_frame_studios</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>© <span id="year"></span> LuminaryFrame Studios — All Rights Reserved</div>
+  </footer>
+
+  <!-- External libs (load once) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Your modules (type=module) -->
+  <script type="module" src="script.js"></script>
+  <script type="module" src="booking.js"></script>
+  <script type="module" src="admin-dashboard.js"></script>
+
+  <script>
+    // Year auto-fill
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
