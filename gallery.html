@@ -1,0 +1,28 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — LuminaryFrame Studios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page" style="max-width:1100px;margin:28px auto;padding:16px;">
+    <header style="text-align:center;margin-bottom:18px;">
+      <h1 style="color:var(--accent1, #ff007f);margin:0 0 6px;">Our Sample Work</h1>
+      <p style="color:var(--muted,#bfbfbf);margin:6px 0 0;">Preview edits uploaded by the studio. Logged-in users can also view their orders below.</p>
+    </header>
+
+    <main id="gallery" class="gallery-grid" aria-live="polite">
+      <!-- Cards injected by gallery.js -->
+    </main>
+
+    <div id="userOrders" style="max-width:1100px;margin:28px auto;padding:16px;"></div>
+
+    <a class="back" href="index.html" style="display:block;margin:18px auto;text-align:center;color:var(--muted);">← Back to Home</a>
+  </div>
+
+  <script type="module" src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* === HOME PAGE PROFESSIONAL LAYOUT === */
+
+:root {
+  --accent1: #ff007f;
+  --accent2: #ff4d4d;
+  --bg: #0a0a0a;
+  --panel: rgba(255, 255, 255, 0.03);
+  --muted: #b3b3b3;
+}
+
+body {
+  background: linear-gradient(180deg, #070707 0%, #0a0a0a 100%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+header h1 {
+  font-size: 48px;
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+nav a {
+  padding: 10px 24px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, var(--accent1), var(--accent2));
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 0, 128, 0.3);
+}
+
+nav a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 0, 128, 0.6);
+  background: linear-gradient(45deg, var(--accent2), var(--accent1));
+}
+
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.section {
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+}
+
+.section h2 {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.section p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+}
